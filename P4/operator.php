@@ -50,4 +50,9 @@ echo "<br>Hasil perkalian   : " .$hasilPerkalian;
 echo "<br>Hasil pembagian   : " .$hasilPembagian;
 echo "<br>Sisa hasil bagi   : " .$sisaHasilBagi ;
 
+$hasilIndentik      = $a === $b;
+$hasilTidakIdentik  = $a !== $b;
+echo "<p>Hasil identik          : " .$hasilIndentik;
+echo "<br>Hasil tidak identik   : " .$hasilTidakIdentik;
+
 ?>
