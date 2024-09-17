@@ -27,9 +27,10 @@ var_dump($rataRata);
 //
 $apakahSiswaLulus = true;
 $apakahSiswaSudahUjian = false;
-
+echo "<p>";
 var_dump($apakahSiswaLulus);
 echo "<br>";
 var_dump($apakahSiswaSudahUjian);
 //
+
 ?>
