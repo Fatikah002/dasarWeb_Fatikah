@@ -38,4 +38,16 @@ echo "<p>Hasil AND     : " .$hasilAnd;
 echo "<br>Hasil OR    : " .$hasilOr;
 echo "<br>Hasil NOT A    : " .$hasilNotA;
 echo "<br>Hasil NOT B    : " .$hasilNotB;
+
+$hasilPenjumlahan   = $a += $b;
+$hasilPengurangan   = $a -= $b;
+$hasilPerkalian     = $a *= $b;
+$hasilPembagian     = $a /= $b;
+$sisaHasilBagi      = $a %= $b;
+echo "<p>Hasil penjumlahan  : " .$hasilPenjumlahan;
+echo "<br>Hasil pengurangan : " .$hasilPengurangan;
+echo "<br>Hasil perkalian   : " .$hasilPerkalian;
+echo "<br>Hasil pembagian   : " .$hasilPembagian;
+echo "<br>Sisa hasil bagi   : " .$sisaHasilBagi ;
+
 ?>
