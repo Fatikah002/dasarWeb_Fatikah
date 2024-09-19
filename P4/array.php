@@ -1,4 +1,4 @@
-<?php 
+<?php
 $nilaiSiswa = [85, 92, 78, 64, 90, 55, 88, 79, 70, 96];
 
 $nilaiLulus = [];
@@ -18,13 +18,41 @@ $daftarKaryawan = [
     ['David', 5],
     ['Eva', 6],
 ];
-    $karyawanPengalamanLimaTahun = [];
-    
-    foreach ($daftarKaryawan as $karyawan) {
+$karyawanPengalamanLimaTahun = [];
+
+foreach ($daftarKaryawan as $karyawan) {
     if ($karyawan[1] > 5) {
-    $karyawanPengalamanLimaTahun[] = $karyawan[0];
+        $karyawanPengalamanLimaTahun[] = $karyawan[0];
     }
 }
-    echo "<br>Daftar karyawan dengan pengalaman kerja lebih dari 5 tahun: " . implode(', ',
-    $karyawanPengalamanLimaTahun);
+echo "<p>Daftar karyawan dengan pengalaman kerja lebih dari 5 tahun: " . implode(
+    ', ',
+    $karyawanPengalamanLimaTahun
+);
+//
+$daftarNilai = [
+    'Matematika' => [
+        ['Alice', 85],
+        ['Bob', 92],
+        ['Charlie', 78],
+    ],
+    'Fisika' => [
+        ['Alice', 90],
+        ['Bob', 88],
+        ['Charlie', 75],
+    ],
+    'Kimia' => [
+        ['Alice', 92],
+        ['Bob', 80],
+        ['Charlie', 85],
+    ],
+];
+
+$mataKuliah = 'Fisika';
+
+echo "<p>Daftar nilai mahasiswa dalam mata kuliah $mataKuliah: <br>";
+
+foreach ($daftarNilai[$mataKuliah] as $nilai) {
+    echo "Nama: {$nilai[0]}, Nilai: {$nilai[1]} <br>";
+}
 ?>
