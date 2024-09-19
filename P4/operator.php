@@ -10,7 +10,7 @@ $sisaBagi       = $a % $b;
 $pangkat        = $a ** $b;
 
 echo "Variabel a: {$a} <br> Variabel b: {$b}<br> ";
-echo "<p>-- Operator Aritmatika -- " ;
+echo "<p>-- Operator Aritmatika dan Pemangkatan -- " ;
 echo "<br>Hasil tambah       : " .$hasilTambah;
 echo "<br>Hasil kurang   : " .$hasilKurang;
 echo "<br>Hasil kali     : " .$hasilKali;
