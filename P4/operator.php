@@ -10,6 +10,7 @@ $sisaBagi       = $a % $b;
 $pangkat        = $a ** $b;
 
 echo "Variabel a: {$a} <br> Variabel b: {$b}<br> ";
+echo "<p>-- Operator Aritmatika -- " ;
 echo "<br>Hasil tambah       : " .$hasilTambah;
 echo "<br>Hasil kurang   : " .$hasilKurang;
 echo "<br>Hasil kali     : " .$hasilKali;
@@ -23,7 +24,8 @@ $hasilLebihKecil     = $a < $b;
 $hasilLebihBesar     = $a > $b;
 $hasilLebihKecilSama = $a <= $b;
 $hasilLebihBesarSama = $a >= $b;
-echo "<p>Hasil Sama      : " .$hasilSama;
+echo "<p>-- Operator Perbandingan -- " ;
+echo "<br>Hasil Sama      : " .$hasilSama;
 echo "<br>Hasil tidak sama: " .$hasilTidakSama;
 echo "<br>Hasil lebih kecil: " .$hasilLebihKecil;
 echo "<br>Hasil lebih besar: " .$hasilLebihBesar;
@@ -34,7 +36,8 @@ $hasilAnd   = $a && $b;
 $hasilOr    = $a || $b;
 $hasilNotA  = !$a;
 $hasilNotB  = !$b;
-echo "<p>Hasil AND     : " .$hasilAnd;
+echo "<p>-- Operator Logika -- " ;
+echo "<br>Hasil AND     : " .$hasilAnd;
 echo "<br>Hasil OR    : " .$hasilOr;
 echo "<br>Hasil NOT A    : " .$hasilNotA;
 echo "<br>Hasil NOT B    : " .$hasilNotB;
@@ -44,7 +47,8 @@ $hasilPengurangan   = $a -= $b;
 $hasilPerkalian     = $a *= $b;
 $hasilPembagian     = $a /= $b;
 $sisaHasilBagi      = $a %= $b;
-echo "<p>Hasil penjumlahan  : " .$hasilPenjumlahan;
+echo "<p>-- Operator Penugasan -- " ;
+echo "<br>Hasil penjumlahan  : " .$hasilPenjumlahan;
 echo "<br>Hasil pengurangan : " .$hasilPengurangan;
 echo "<br>Hasil perkalian   : " .$hasilPerkalian;
 echo "<br>Hasil pembagian   : " .$hasilPembagian;
@@ -52,7 +56,8 @@ echo "<br>Sisa hasil bagi   : " .$sisaHasilBagi ;
 
 $hasilIndentik      = $a === $b;
 $hasilTidakIdentik  = $a !== $b;
-echo "<p>Hasil identik          : " .$hasilIndentik;
+echo "<p>-- Operator Identik -- " ;
+echo "<br>Hasil identik          : " .$hasilIndentik;
 echo "<br>Hasil tidak identik   : " .$hasilTidakIdentik;
 
 ?>
