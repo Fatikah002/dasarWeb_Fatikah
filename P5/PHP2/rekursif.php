@@ -8,7 +8,7 @@
 
 //Perulangan for - langkah 3
     echo "<h3>Perulangan For</h3>";
-    for ($i=0; $i <= 25 ; $i++) { 
+    for ($i=1; $i <= 25 ; $i++) { 
         echo "Perulangan ke-{$i}<br>";
     }
     echo "<hr>";
