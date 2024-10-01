@@ -9,9 +9,11 @@
 
         echo $listDosen[2] . "<br>";
         echo $listDosen[0] . "<br>";
-        echo $listDosen[1] . "<br><br>"  ;
+        echo $listDosen[1] . "<br><br>" ;
 
-        
+        for ($i=0; $i < count($listDosen) ; $i++) { 
+            echo  $listDosen[$i] . "<br>";
+        }
         ?>
     </body>
 </html>
