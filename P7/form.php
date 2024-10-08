@@ -4,7 +4,7 @@
         <title>Form Input PHP</title>
     </head>
     <body>
-        <h2>Forn Input PHP</h2>
+        <h2>Form Input PHP</h2>
         <form method="post" action="proses_form.php">
             <label for="nama">Nama:</label>
             <input type="text" name="nama" id="nama" required><br><br>
