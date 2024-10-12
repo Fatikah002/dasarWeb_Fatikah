@@ -26,8 +26,8 @@
 // echo $new_text; //Output: "I like banana pie."
 
 //Langkah14
-$pattern = '/go?d/' ; // Cocokkan "god", "good", "gooood", dll.
-$text = 'god is good.';
+$pattern = '/go{1,3}d/' ; // Cocokkan "god", "good", "gooood", dll.
+$text = 'is gooood.';
 if (preg_match($pattern, $text, $matches)){
     echo "Cocokkan: " . $matches[0];
 } else{
