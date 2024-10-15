@@ -50,11 +50,7 @@
                     var formData = $(this).serialize();
 
                     $.ajax({
-<<<<<<< HEAD
                         url: "proses_validasi.php",
-=======
-                        url: "proses_validasi.php", // Ganti dengan nama file PHP yang sesuai
->>>>>>> e97f3374263c9c4a6dfe7734c36c8815fae90c6f
                         type: "POST",
                         data: formData,
                         success: function(response) {
