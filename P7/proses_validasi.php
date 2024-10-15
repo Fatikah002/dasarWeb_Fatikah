@@ -2,6 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nama = $_POST["nama"];
     $email = $_POST["email"];
+    $password = $_POST["password"];
     $errors = array();
 
     // Validasi Nama
@@ -13,6 +14,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($email)) {
         $errors[] = "Email harus diisi.";
     } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "Format email tidak valid.";
+    }
+
+    if (strlen($password) < 8) {
+        $errors[] = "Password minimal 8 karakter";
+    } else if (empty($email)) {
         $errors[] = "Format email tidak valid.";
     }
 

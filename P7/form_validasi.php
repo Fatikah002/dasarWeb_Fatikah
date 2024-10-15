@@ -15,7 +15,11 @@
 
         <label for="email">Email: </label>
         <input type="text" id="email" name="email">
-        <span id="email-error" style="color: red;"></span><br><br>
+        <span id="email-error" style="color: red;"></span><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password">
+        <span id="password-error" style="color: red;"></span><br><br>
 
         <input type="submit" value="Submit">
     </form>
@@ -29,6 +33,7 @@
                 e.preventDefault(); // Mencegah pengiriman form secara default
                 var nama = $("#nama").val();
                 var email = $("#email").val();
+                var password = $("#password").val();
                 var valid = true;
 
                 // Mengumpulkan data form
@@ -44,6 +49,16 @@
                     valid = false;
                 } else {
                     $("#email-error").text("");
+                }
+
+                if (password === "") {
+                    $("#password-error").text("Password harus diisi.");
+                    valid = false;
+                } else if (password.length < 8) {
+                    $("#password-error").text("Password minimal 8 karakter.");
+                    valid = false;
+                } else {
+                    $("#password-error").text("");
                 }
 
                 if (valid) {
