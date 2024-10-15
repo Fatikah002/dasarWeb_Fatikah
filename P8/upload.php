@@ -9,7 +9,8 @@ if (isset($_POST["submit"])) {
 
     if (in_array($fileType, $allowedExtensions) && $_FILES["myfile"]["size"] <= $maxSize) {
         if (move_uploaded_file($_FILES["myfile"]["tmp_name"], $targetfile)) {
-            echo "File berhasil diunggah";
+            echo "File berhasil diunggah<br>";
+            echo "<img src='" . $targetfile . "' width='200' alt='Thumbnail'>";
         } else {
             echo "Gagal mengunggah file.";
         }
