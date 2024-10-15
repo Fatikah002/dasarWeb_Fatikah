@@ -15,17 +15,23 @@
 
         <label for="email">Email: </label>
         <input type="text" id="email" name="email">
-        <span id="email-error" style="color: red;"></span><br>
+        <span id="email-error" style="color: red;"></span><br><br>
 
         <input type="submit" value="Submit">
     </form>
+    <div id="hasil">
+        <!-- Hasil akan ditampilkan di sini -->
+    </div>
+
     <script>
         $(document).ready(function() {
-            $("#myForm").submit(function(event) {
+            $("#myForm").submit(function(e) {
+                e.preventDefault(); // Mencegah pengiriman form secara default
                 var nama = $("#nama").val();
                 var email = $("#email").val();
                 var valid = true;
 
+                // Mengumpulkan data form
                 if (nama === "") {
                     $("#nama-error").text("Nama harus diisi.");
                     valid = false;
@@ -40,12 +46,24 @@
                     $("#email-error").text("");
                 }
 
-                if (!valid) {
-                    event.preventDefault(); // Menghentikan pengiriman form jika validasi gagal
+                if (valid) {
+                    var formData = $(this).serialize();
+
+                    $.ajax({
+                        url: "proses_validasi.php",
+                        type: "POST",
+                        data: formData,
+                        success: function(response) {
+                            // Tampilkan hasil dari server di div "hasil"
+                            $("#hasil").html(response);
+                        },
+                        error: function(response) {
+                            $("#hasil").html("Terjadi kesalahan saat mengirim data");
+                        }
+                    });
                 }
             });
         });
     </script>
 </body>
-
 </html>
