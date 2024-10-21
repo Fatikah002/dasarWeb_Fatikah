@@ -4,16 +4,6 @@
 <head>
     <title>SkinRate</title>
     <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
-<<<<<<< HEAD
-=======
-    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
-    <style>
-        body {
-            background-color: #f8f7f3;
-        }
-    </style>
-    </style>
->>>>>>> b36d48ac1dd059bd6cbf2db7fba8b6b45890d56f
 </head>
 
 <body>
@@ -42,11 +32,7 @@
     </nav>
 </body>
 
-<<<<<<< HEAD
 <section class="hero-section text-center" style="padding: 60px; background-color: #FFF0F5;">
-=======
-<section class="hero-section text-center" style="padding: 60px; background-color: #FFF0F5;;">
->>>>>>> b36d48ac1dd059bd6cbf2db7fba8b6b45890d56f
     <div class="container ">
         <h1>Temukan Produk Skincare Terbaik</h1>
         <p>Lihat Ulasan Pengguna untuk Membeli Skincare.</p>
