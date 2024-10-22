@@ -4,6 +4,7 @@
 <head>
     <title>SkinRate</title>
     <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,6 @@
             </div>
         </div>
     </nav>
-</body>
 
 <section class="hero-section text-center" style="padding: 60px; background-color: #FFF0F5;">
     <div class="container ">
@@ -132,6 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 </section>
+
 
 <!-- penilaian dan komentar -->
 <section id="penilaian" class="text-center py-5  border-top" style="background-color:#FFF0F5;">
