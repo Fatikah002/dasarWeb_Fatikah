@@ -1,8 +1,6 @@
 <?php
-// mengimport kode program yang ada didalam database.php
 include 'database.php';
 
-// mengecek apakah ada data bernama 'submit'
 if (isset($_POST['submit'])) {
     $nama = htmlspecialchars($_POST['nama_sepatu']);
     $deskripsi = htmlspecialchars($_POST['deskripsi_sepatu']);
@@ -10,9 +8,7 @@ if (isset($_POST['submit'])) {
     $harga = htmlspecialchars($_POST['harga_sepatu']);
     
 
-    // mengecek apakah $nama dan $harga sudah terisi
     if (isset($nama) && isset($harga)) {
-        // query sql
         $query = "INSERT INTO daftar_sepatu (nama_sepatu, deskripsi_sepatu, stok_sepatu , harga_sepatu) VALUES (?, ?, ?, ?)";
         $params = [
             $nama,
@@ -44,9 +40,9 @@ if (isset($_POST['submit'])) {
     <title>DAFTAR SEPATU</title>
 </head>
 
-<body>
-    <h3 class="text-center my-3">CREATE</h3>
-    <div class="card mx-5 py-2 px-3">
+<body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif'; background-color: #DFEBF6;">
+    <h3 class="text-center my-3" style="font-size:xx-large; font-weight:bolder">TAMBAH DATA</h3>
+    <div class="card mx-5 py-2 px-3" >
         <form action="create.php" method="POST">
             <div class="mb-3">
                 <label for="nama_sepatu" class="form-label">Nama Barang</label>

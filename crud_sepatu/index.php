@@ -5,7 +5,6 @@ $query = "SELECT * FROM daftar_sepatu";
 $sql = sqlsrv_query($koneksi, $query);
 $daftar_sepatu = [];
 
-// cek apabila eksekusi berhasil
 if ($sql) {
     while ($row = sqlsrv_fetch_array($sql, SQLSRV_FETCH_ASSOC)) {
         $daftar_sepatu[] = $row;

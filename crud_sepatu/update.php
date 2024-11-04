@@ -1,8 +1,6 @@
 <?php
-// mengimport kode program yang ada didalam database.php
 include 'database.php';
 
-// mengecek apakah ada value msg di dalam url dengan menggunakan $_get
 if (isset($_GET['id_sepatu'])) {
     $id = htmlspecialchars($_GET['id_sepatu']);
     $query = "SELECT * FROM daftar_sepatu WHERE id_sepatu= ?";
@@ -18,7 +16,6 @@ if (isset($_GET['id_sepatu'])) {
     header('Location:index.php');
 }
 
-// mengecek apakah ada data bernama 'submit'
 if (isset($_POST['submit'])) {
     $nama = htmlspecialchars($_POST['nama_sepatu']);   
     $deskripsi = htmlspecialchars($_POST['deskripsi_sepatu']);
@@ -26,7 +23,6 @@ if (isset($_POST['submit'])) {
     $harga = htmlspecialchars($_POST['harga_sepatu']);
     $id = htmlspecialchars($_POST['id_sepatu']);
 
-    // mengecek apakah $nama dan $harga sudah terisi
     if (isset($nama) && isset($harga)) {
        
         $query = "UPDATE daftar_sepatu SET nama_sepatu = ?, deskripsi_sepatu = ?, stok_sepatu= ?,  harga_sepatu = ? WHERE id_sepatu = ?";
@@ -61,8 +57,8 @@ if (isset($_POST['submit'])) {
     <title>DAFTAR SEPATU</title>
 </head>
 
-<body>
-    <h3 class="text-center my-3">UPDATE</h3>
+<body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif'; background-color: #DFEBF6;">
+    <h3 class="text-center my-3" style="font-size:xx-large; font-weight:bolder">UPDATE DATA</h3>
     <div class="card mx-5 py-2 px-3">
         <form action="update.php" method="POST">
             <div class="mb-3">

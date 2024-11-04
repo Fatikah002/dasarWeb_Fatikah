@@ -1,9 +1,7 @@
 <?php
-// mengimport kode program yang ada didalam database.php
 include 'database.php';
 
 if (isset($_POST['submit'])) {
-    // memasukkan value bersih dari $_POST ke dalam variabel
     $id = htmlspecialchars($_POST['id_sepatu']);
 
     $query = "DELETE FROM daftar_sepatu WHERE id_sepatu = ?";
