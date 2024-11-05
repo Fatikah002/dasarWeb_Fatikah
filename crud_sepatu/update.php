@@ -71,11 +71,11 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="mb-3">
                 <label for="stok_sepatu" class="form-label">Stok Barang</label>
-                <input type="text" class="form-control" id="stok_sepatu" name="stok_sepatu" min="0" value="<?= $barang['stok_sepatu'] ?>" required>
+                <input type="number" class="form-control" id="stok_sepatu" name="stok_sepatu" min="0" value="<?= $barang['stok_sepatu'] ?>" min="0" required>
             </div>
             <div class="mb-3">
                 <label for="harga_sepatu" class="form-label">Harga Barang</label>
-                <input type="number" class="form-control" id="harga_sepatu" name="harga_sepatu" value="<?= $barang['harga_sepatu'] ?>" required>
+                <input type="number" class="form-control" id="harga_sepatu" name="harga_sepatu" value="<?= $barang['harga_sepatu'] ?>" min="0"  required>
             </div>
             <input type="hidden" name="id_sepatu" value="<?= $barang['id_sepatu'] ?>">
             <button class="btn btn-primary" type="submit" name="submit">SIMPAN</button>

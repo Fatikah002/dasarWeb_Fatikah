@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="mb-3">
                 <label for="harga_sepatu" class="form-label">Harga Barang</label>
-                <input type="number" class="form-control" id="harga_sepatu" name="harga_sepatu" required>
+                <input type="number" class="form-control" id="harga_sepatu" name="harga_sepatu" min="0" required>
             </div>
             <button class="btn btn-primary" type="submit" name="submit">TAMBAH</button>
             <button class="btn btn-danger" type="reset">RESET</button>
